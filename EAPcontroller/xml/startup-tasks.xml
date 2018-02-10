@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<taskStore xmlns="task.xsd">
+	<!-- <task taskId="1"> <taskClassName>com.tp_link.eap.start.task.EapMongoDbStartUpTask 
+		</taskClassName> <taskChain> <nextTaskId>2</nextTaskId> <condition>1</condition> 
+		</taskChain> </task> -->
+	<task taskId="2" isFirst="true">
+		<taskClassName>com.tp_link.eap.start.task.EapSearchControllerTask
+		</taskClassName>
+		<taskChain>
+			<nextTaskId>5</nextTaskId>
+			<condition>1</condition>
+		</taskChain>
+		<taskChain>
+			<nextTaskId>10</nextTaskId>
+			<condition>0</condition>
+		</taskChain>
+	</task>
+	<task taskId="3">
+		<taskClassName>com.tp_link.eap.start.task.EapFailExitTask
+		</taskClassName>
+	</task>
+	<task taskId="10">
+		<taskClassName>com.tp_link.eap.start.task.EapControllerFoundExitTask
+		</taskClassName>
+	</task>
+<!-- 	<task taskId="4">
+		<taskClassName>com.tp_link.eap.start.task.EapCreateDBUserTask
+		</taskClassName>
+		<taskChain>
+			<nextTaskId>5</nextTaskId>
+			<condition>1</condition>
+		</taskChain>
+	</task> -->
+	<task taskId="5">
+		<taskClassName>com.tp_link.eap.start.task.EapControllerDiscoveryStartUpTask
+		</taskClassName>
+		<taskChain>
+			<nextTaskId>6</nextTaskId>
+			<condition>1</condition>
+		</taskChain>
+	</task>
+	<task taskId="6">
+		<taskClassName>com.tp_link.eap.start.task.EapNettyStartUpTask
+		</taskClassName>
+		<taskChain>
+			<nextTaskId>7</nextTaskId>
+			<condition>1</condition>
+		</taskChain>
+		<taskChain>
+			<nextTaskId>3</nextTaskId>
+			<condition>0</condition>
+		</taskChain>
+	</task>
+	<task taskId="7">
+		<taskClassName>com.tp_link.eap.start.task.EapJettyStartUpTask
+		</taskClassName>
+		<taskChain>
+			<nextTaskId>8</nextTaskId>
+			<condition>1</condition>
+		</taskChain>
+		<taskChain>
+			<nextTaskId>3</nextTaskId>
+			<condition>0</condition>
+		</taskChain>
+	</task>
+	<task taskId="8">
+		<taskClassName>com.tp_link.eap.start.task.EapMetaDataInitTask
+		</taskClassName>
+		<taskChain>
+			<nextTaskId>11</nextTaskId>
+			<condition>1</condition>
+		</taskChain>
+	</task>
+	<task taskId="11">
+		<taskClassName>com.tp_link.eap.monitor.globalsetting.task.PortalBackgroundTask
+		</taskClassName>
+		<taskChain>
+			<nextTaskId>9</nextTaskId>
+			<condition>1</condition>
+		</taskChain>
+	</task>
+
+	<task taskId="9">
+		<taskClassName>com.tp_link.eap.start.task.EapSuccessExitTask
+		</taskClassName>
+	</task>
+</taskStore>

@@ -1,0 +1,28 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="task.xsd" elementFormDefault="qualified" targetNamespace="task.xsd">
+
+	<xsd:element name="taskStore" type="taskStoreType" />
+
+	<xsd:complexType name="taskStoreType">
+		<xsd:sequence maxOccurs="unbounded">
+			<xsd:element name="task" type="taskType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="taskType">
+		<xsd:sequence>
+			<xsd:element name="taskClassName" type="xsd:string" />
+			<xsd:element name="taskChain" maxOccurs="unbounded" type="taskChainType" />
+		</xsd:sequence>
+		<xsd:attribute name="taskId" type="xsd:positiveInteger" />
+		<xsd:attribute name="isFirst" use="optional" type="xsd:boolean" />
+	</xsd:complexType>
+
+	<xsd:complexType name="taskChainType">
+		<xsd:sequence>
+			<xsd:element name="nextTaskId" type="xsd:positiveInteger" />
+			<xsd:element name="condition" type="xsd:positiveInteger" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

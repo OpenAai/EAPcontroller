@@ -1,0 +1,148 @@
+{
+    "model_version_mapping_list":
+    [
+        {
+            "modelName": "EAP110",
+            "fwVersionRegex": "^1\\.0\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        {
+            "modelName": "EAP110",
+            "fwVersionRegex": "^1\\.1\\.\\d+ .+",
+            "modelVersion": "2.0"
+        },
+         {
+            "modelName": "EAP110",
+            "fwVersionRegex": "^2\\.\\d+\\.\\d+ .+",
+            "modelVersion": "3.0"
+        },
+        
+        {
+            "modelName": "EAP110-Outdoor",
+            "fwVersionRegex": "^1\\.0\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        {
+            "modelName": "EAP110-Outdoor",
+            "fwVersionRegex": "^2\\.\\d+\\.\\d+ .+",
+            "modelVersion": "2.0"
+        },
+        
+        {
+            "modelName": "EAP115",
+            "fwVersionRegex": "^1\\.0\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        {
+            "modelName": "EAP115",
+            "fwVersionRegex": "^1\\.[1|2]\\.\\d+ .+",
+            "modelVersion": "2.0"
+        },
+        {
+            "modelName": "EAP115",
+            "fwVersionRegex": "^2\\.\\d+\\.\\d+ .+",
+            "modelVersion": "3.0"
+        },
+        
+        
+        {
+            "modelName": "EAP115-Wall",
+            "fwVersionRegex": "^1\\.0\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        {
+            "modelName": "EAP115-Wall",
+            "fwVersionRegex": "^2\\.\\d+\\.\\d+ .+",
+            "modelVersion": "2.0"
+        },
+        
+        {
+            "modelName": "EAP120",
+            "fwVersionRegex": "^[1|2]\\.0\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },        
+        {
+            "modelName": "EAP120",
+            "fwVersionRegex": "^3\\.6\\.0 .+",
+            "modelVersion": "1.0"
+        },
+        
+        
+        {
+            "modelName": "EAP220",
+            "fwVersionRegex": "^[1|2]\\.0\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        
+        {
+            "modelName": "EAP225",
+            "fwVersionRegex": "^1\\.0\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        
+        {
+            "modelName": "EAP225",
+            "fwVersionRegex": "^1\\.1\\.\\d+ .+",
+            "modelVersion": "2.0"
+        },
+        
+        {
+            "modelName": "EAP225",
+            "fwVersionRegex": "^2\\.\\d+\\.\\d+ .+",
+            "modelVersion": "3.0"
+        },
+        
+        {
+            "modelName": "EAP225-Wall",
+            "fwVersionRegex": "^1\\.\\d+\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        
+        {
+            "modelName": "EAP225-Outdoor",
+            "fwVersionRegex": "^1\\.\\d+\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        
+        {
+            "modelName": "EAP235",
+            "fwVersionRegex": "^1\\.\\d+\\.\\d+ .+",
+            "modelVersion": "1.1"
+        },
+        
+        {
+            "modelName": "EAP245",
+            "fwVersionRegex": "^1\\.0\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        {
+            "modelName": "EAP245",
+            "fwVersionRegex": "^2\\.\\d+\\.\\d+ .+",
+            "modelVersion": "2.0"
+        },
+        
+        {
+            "modelName": "EAP320",
+            "fwVersionRegex": "^1\\.0\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        
+        {
+            "modelName": "EAP320",
+            "fwVersionRegex": "^1\\.1\\.\\d+ .+",
+            "modelVersion": "2.0"
+        },
+        
+        {
+            "modelName": "EAP330",
+            "fwVersionRegex": "^1\\.0\\.\\d+ .+",
+            "modelVersion": "1.0"
+        },
+        {
+            "modelName": "EAP330",
+            "fwVersionRegex": "^1\\.1\\.\\d+ .+",
+            "modelVersion": "2.0"
+        }
+    ]
+        
+}

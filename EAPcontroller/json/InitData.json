@@ -1,0 +1,214 @@
+{
+    "roles": [
+        {
+            "name": "administrator",
+            "description": "administrator",
+            "permissions": [
+                "admin",
+                "write",
+                "read"
+            ],
+            "default": true
+        },
+        {
+            "name": "operator",
+            "description": "operator",
+            "permissions": [
+                "write",
+                "read"
+            ],
+            "default": true
+        },
+        {
+            "name": "observer",
+            "description": "observer",
+            "permissions": [
+                "read"
+            ],
+            "default": true
+        }
+
+    ],
+    "ssh": {
+        "sshserverPort" : 22,
+        "sshenable": false
+    },
+    "managementVlan": {
+        "managementVlanEnable": false,
+        "managementVlanId": 1
+    },
+    "global_enable": {
+        "key": "globalEnable",
+        "macFilteringEnable": false,
+        "schedulerEnable": false,
+        "associationMode": "SSID",
+        "ledOn": true
+    },
+    "user_account_setting": {
+        "key": "userAccount",
+        "userName": "admin",
+        "password": "admin"
+    },
+    "wireless": {
+        "key": "wireless",
+        "beaconInterval2g": 100,
+        "dtimPeriod2g": 1,
+        "rtsThreshold2g": 2347,
+        "fragmentationThreshold2g": 2346,
+        "mcsIndex2g": 0,
+        "supportRate2g": 0,
+        "basicRate2g": 0,
+        "beaconInterval5g": 100,
+        "dtimPeriod5g": 1,
+        "rtsThreshold5g": 2347,
+        "fragmentationThreshold5g": 2346,
+        "mcsIndex5g": 0,
+        "supportRate5g": 0,
+        "basicRate5g": 0
+    },
+    "portal_setting": {
+        "authType": "No Authentication",
+        "authTimeout": 0,
+        "portalHour": 0,
+        "portalMin": 1,
+        "authDuration":3600,
+        "redirectEnable": false,
+        "customizatoion": "Local Web Portal",
+        "portalAccept": true,
+        "portalTitle": "Welcome",
+        "portalUseTerm": "By using it, you are agreeing to these Terms of Use.",
+        "key": "portal"
+    },
+    "log_setting": {
+        "key": "log",
+        "autoMailEnable": false,
+        "serverEnable": false,
+        "logServerIp": "0.0.0.0",
+        "logServerPort": 514,
+        "nvramEnable": false
+    },
+    "qos_setting": {
+        "key": "qos",
+        "wmmEnable24": true,
+        "noAcknowledgement24": false,
+        "deliveryEnable24": true,
+        "apEdcaParams24": [
+            1,
+            3,
+            7,
+            1504,
+            1,
+            7,
+            15,
+            3008,
+            3,
+            15,
+            63,
+            0,
+            7,
+            15,
+            1023,
+            0
+        ],
+        "stationEdcaParams24": [
+            2,
+            3,
+            7,
+            1504,
+            2,
+            7,
+            15,
+            3008,
+            3,
+            15,
+            1023,
+            0,
+            7,
+            15,
+            1023,
+            0
+        ],
+        "wmmEnable5": true,
+        "noAcknowledgement5": false,
+        "deliveryEnable5": true,
+        "apEdcaParams5": [
+            1,
+            3,
+            7,
+            1504,
+            1,
+            7,
+            15,
+            3008,
+            3,
+            15,
+            63,
+            0,
+            7,
+            15,
+            1023,
+            0
+        ],
+        "stationEdcaParams5": [
+            2,
+            3,
+            7,
+            1504,
+            2,
+            7,
+            15,
+            3008,
+            3,
+            15,
+            1023,
+            0,
+            7,
+            15,
+            1023,
+            0
+        ]
+    },
+    "time_setting": {
+        "key": "time",
+        "timeZone": 480,
+        "ntpServerI": "",
+        "ntpServerII": "",
+        "dayLightSavingEnable": false,
+        "mode": "predefined",
+        "predefineCountry": 1,
+        "timeOffsetRec": 60,
+        "timeOffsetDate": 60,
+        "recurringStart": {
+            "month": "Mar",
+            "weekDay": "Sun",
+            "weekNum": "Last",
+            "hour": 1,
+            "min": 0
+        },
+        "recurringEnd": {
+            "month": "Oct",
+            "weekDay": "Sun",
+            "weekNum": "Last",
+            "hour": 1,
+            "min": 0
+        }
+    },
+    "cs_setting": {
+        "id": "cs",
+        "hostname": "127.0.0.1"
+    },
+    "wlan_groups": [
+        {
+            "name": "Default",
+            "radioId": 0,
+            "maxSsids": 8,
+            "isDefault": true
+        },
+        {
+            "name": "Default",
+            "radioId": 1,
+            "maxSsids": 8,
+            "isDefault": true
+        }
+    ]
+}
